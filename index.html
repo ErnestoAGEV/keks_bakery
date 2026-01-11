@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Keks: Brownies artesanales, postres creativos y pedidos rápidos por WhatsApp. Envíos locales, recetas y promociones irresistibles.">
+  <meta name="keywords" content="brownies, postres, keks, repostería, pedidos, delivery, recetas">
+  <meta property="og:title" content="Keks | Brownies artesanales y postres creativos">
+  <meta property="og:description" content="Brownies intensos, postres de autor y pedidos al instante por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://keks.example.com">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=1200&q=80">
+  <link rel="canonical" href="https://keks.example.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Keks | Brownies artesanales</title>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">Keks · Brownies</div>
+      <nav>
+        <ul id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#pedidos">Pedidos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="cta-nav" href="#pedidos">Ordenar ahora</a></li>
+        </ul>
+      </nav>
+      <div class="burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-full">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-badge">🍫 Hechos con amor y cacao real</span>
+        <h1>Brownies que <em>derriten</em></h1>
+        <p>Corazón fudgy, bordes crujientes, cacao de origen. Cada bocado es un abrazo de chocolate.</p>
+        <div class="hero-actions">
+          <button class="btn btn-gold" onclick="window.location.href='#pedidos'">🛒 Pedir ahora</button>
+          <button class="btn btn-outline" onclick="window.open('https://wa.me/523123202932','_blank')">💬 WhatsApp</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">+2k</span><span class="stat-label">Clientes felices</span></div>
+          <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Calificación</span></div>
+          <div class="stat"><span class="stat-num">24h</span><span class="stat-label">Entrega express</span></div>
+        </div>
+      </div>
+      <div class="hero-gallery">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Brownie de chocolate" class="hero-img main">
+        <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=400&q=80" alt="Brownie con nuez" class="hero-img float-1">
+        <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=400&q=80" alt="Caja de brownies" class="hero-img float-2">
+      </div>
+      <div class="scroll-indicator" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+        <span>Explora</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+      </div>
+    </section>
+
+    <!-- FEATURES STRIP -->
+    <section class="features-strip">
+      <div class="container features-grid">
+        <div class="feature">
+          <span class="feature-icon">🌿</span>
+          <div>
+            <strong>100% Natural</strong>
+            <small>Sin conservadores</small>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🚚</span>
+          <div>
+            <strong>Envío gratis</strong>
+            <small>Pedidos +$650</small>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🎁</span>
+          <div>
+            <strong>Empaque regalo</strong>
+            <small>Listo para regalar</small>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">💳</span>
+          <div>
+            <strong>Pago fácil</strong>
+            <small>Tarjeta o transferencia</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="container">
+      <div class="section-head">
+        <div>
+          <h2>Menú Keks</h2>
+          <p>Brownies base y rotativos, acompañados de postres fríos. Personaliza toppings, tamaño y agrega dedicatorias.</p>
+        </div>
+        <div class="badge">🌿 Ingredientes reales</div>
+      </div>
+      <div class="card-grid">
+        <div class="card animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Brownie clásico" class="card-img">
+          <div class="card-content">
+            <div class="tag">Top venta</div>
+            <h3>Brownie clásico</h3>
+            <p>Chocolate 64%, mantequilla dorada y vainilla de Papantla.</p>
+            <div class="price">$60 MXN</div>
+            <small>Extras: nuez, sal de mar ahumada, caramelo salado.</small>
+          </div>
+        </div>
+        <div class="card animate-on-scroll animate-delay-1">
+          <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=600&q=80" alt="Brownie cheesecake" class="card-img">
+          <div class="card-content">
+            <div class="tag">Nuevo</div>
+            <h3>Brownie cheesecake</h3>
+            <p>Swirl de queso crema y crumble de galleta de avena.</p>
+            <div class="price">$75 MXN</div>
+            <small>Extras: frambuesa liofilizada, lemon curd.</small>
+          </div>
+        </div>
+        <div class="card animate-on-scroll animate-delay-2">
+          <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=600&q=80" alt="Brownie matcha" class="card-img">
+          <div class="card-content">
+            <h3>Brownie matcha</h3>
+            <p>Matcha ceremonial, chocolate blanco y crocante de pistache.</p>
+            <div class="price">$78 MXN</div>
+            <small>Sin colorantes · Opción vegana.</small>
+          </div>
+        </div>
+        <div class="card animate-on-scroll animate-delay-3">
+          <img src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2c?auto=format&fit=crop&w=600&q=80" alt="Barra de caramelo" class="card-img">
+          <div class="card-content">
+            <h3>Barra de caramelo</h3>
+            <p>Base brownie, centro de caramelo salado y cobertura de cacao 70%.</p>
+            <div class="price">$82 MXN</div>
+            <small>Ideal para compartir en eventos.</small>
+          </div>
+        </div>
+        <div class="card animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=600&q=80" alt="Caja degustación" class="card-img">
+          <div class="card-content">
+            <h3>Caja degustación</h3>
+            <p>6 mini brownies + 2 toppings + nota personalizada.</p>
+            <div class="price">$320 MXN</div>
+            <small>Incluye maridaje sugerido.</small>
+          </div>
+        </div>
+        <div class="card animate-on-scroll animate-delay-1">
+          <img src="https://images.unsplash.com/photo-1461009209120-103a8f01c9c8?auto=format&fit=crop&w=600&q=80" alt="Brownie keto" class="card-img">
+          <div class="card-content">
+            <h3>Brownie keto</h3>
+            <p>Sin azúcar refinada, endulzado con monk fruit, harina de almendra.</p>
+            <div class="price">$85 MXN</div>
+            <small>Macros detalladas en la nota.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="gallery-section">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <span class="gallery-badge">📸 Nuestras creaciones</span>
+          <h2>Galería de <span class="text-gradient">Antojo</span></h2>
+          <p>Texturas, brillos y corte perfecto. Así se ven los brownies que llegan a tu mesa.</p>
+        </div>
+        
+        <div class="gallery-bento">
+          <!-- Item grande principal -->
+          <div class="gallery-item gallery-item--large animate-on-scroll" data-index="0">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80" alt="Brownie de chocolate intenso">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span class="gallery-tag">✨ Favorito</span>
+                <h4>Brownie Clásico</h4>
+                <p>Chocolate belga al 70%</p>
+              </div>
+              <div class="gallery-zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Items medianos -->
+          <div class="gallery-item animate-on-scroll animate-delay-1" data-index="1">
+            <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=600&q=80" alt="Brownies con nuez">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span class="gallery-tag">🥜 Crunchy</span>
+                <h4>Con nuez pecana</h4>
+              </div>
+              <div class="gallery-zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item animate-on-scroll animate-delay-2" data-index="2">
+            <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=600&q=80" alt="Brownies con caramelo">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span class="gallery-tag">🍯 Dulce</span>
+                <h4>Caramelo salado</h4>
+              </div>
+              <div class="gallery-zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Item horizontal grande -->
+          <div class="gallery-item gallery-item--wide animate-on-scroll" data-index="3">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=80" alt="Caja de brownies variados">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span class="gallery-tag">🎁 Gift Box</span>
+                <h4>Caja degustación</h4>
+                <p>6 sabores únicos</p>
+              </div>
+              <div class="gallery-zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item animate-on-scroll animate-delay-1" data-index="4">
+            <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=600&q=80" alt="Brownie con helado">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span class="gallery-tag">🍨 À la mode</span>
+                <h4>Con helado</h4>
+              </div>
+              <div class="gallery-zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item animate-on-scroll animate-delay-2" data-index="5">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Brownie cheesecake">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span class="gallery-tag">🧀 Cremoso</span>
+                <h4>Cheesecake swirl</h4>
+              </div>
+              <div class="gallery-zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Item alto -->
+          <div class="gallery-item gallery-item--tall animate-on-scroll animate-delay-3" data-index="6">
+            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=600&q=80" alt="Torre de brownies">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span class="gallery-tag">🏆 Premium</span>
+                <h4>Torre especial</h4>
+                <p>Para eventos</p>
+              </div>
+              <div class="gallery-zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item animate-on-scroll" data-index="7">
+            <img src="https://images.unsplash.com/photo-1612886623909-8c8c9565c8ed?auto=format&fit=crop&w=600&q=80" alt="Brownie matcha">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span class="gallery-tag">🍵 Zen</span>
+                <h4>Matcha bliss</h4>
+              </div>
+              <div class="gallery-zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-cta animate-on-scroll">
+          <p>¿Te antojaste? 😋</p>
+          <a href="#pedidos" class="btn btn-primary">Ordenar ahora</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pedidos" class="order-section">
+      <div class="order-container">
+        <div class="order-info">
+          <span class="order-badge">🍫 Pedido en 2 minutos</span>
+          <h2>Ordena tus brownies favoritos</h2>
+          <p>Llena el formulario y te llevamos directo a WhatsApp con tu pedido listo. Confirmamos y enviamos.</p>
+          
+          <div class="order-steps">
+            <div class="step">
+              <div class="step-icon">1</div>
+              <div class="step-content">
+                <strong>Elige tu antojo</strong>
+                <span>Selecciona producto y cantidad</span>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">2</div>
+              <div class="step-content">
+                <strong>Envía por WhatsApp</strong>
+                <span>Te redirigimos automáticamente</span>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">3</div>
+              <div class="step-content">
+                <strong>Recibe en casa</strong>
+                <span>Confirmamos pago y entrega</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-features">
+            <div class="order-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Colima y alrededores</span>
+            </div>
+            <div class="order-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Respuesta &lt; 5 min</span>
+            </div>
+            <div class="order-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+              <span>Tarjeta o transferencia</span>
+            </div>
+            <div class="order-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Envío gratis +$650</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-form-card">
+          <div class="order-form-header">
+            <h3>📝 Tu pedido</h3>
+            <span>Lun-Dom 9:00 - 20:00</span>
+          </div>
+          <form id="orderForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+              </div>
+              <div class="form-group">
+                <label for="telefono">WhatsApp</label>
+                <input id="telefono" name="telefono" placeholder="55 1234 5678" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo (opcional)</label>
+              <input id="correo" name="correo" type="email" placeholder="correo@ejemplo.com">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="producto">Producto</label>
+                <select id="producto" name="producto" required>
+                  <option value="Brownie clásico">🍫 Brownie clásico - $60</option>
+                  <option value="Brownie cheesecake">🧀 Brownie cheesecake - $75</option>
+                  <option value="Brownie matcha">🍵 Brownie matcha - $78</option>
+                  <option value="Barra de caramelo">🍬 Barra de caramelo - $82</option>
+                  <option value="Caja degustación">🎁 Caja degustación - $320</option>
+                  <option value="Brownie keto">💚 Brownie keto - $85</option>
+                </select>
+              </div>
+              <div class="form-group form-group-small">
+                <label for="cantidad">Cantidad</label>
+                <input id="cantidad" name="cantidad" type="number" min="1" value="6" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="extras">Personalización</label>
+              <textarea id="extras" name="extras" placeholder="Toppings, mensaje en tarjeta, horario preferido de entrega..."></textarea>
+            </div>
+            <button class="btn btn-whatsapp" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Enviar pedido a WhatsApp
+            </button>
+          </form>
+          <p class="form-note">🔒 Tus datos solo se usan para procesar tu pedido</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="container">
+      <div class="section-head">
+        <div>
+          <h2>Testimonios</h2>
+          <p>Clientes que repiten cada semana. Gracias por elegir hornear con nosotros.</p>
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/100?img=32" alt="Avatar Sofía" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Sofía García</h4>
+              <div class="testimonial-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="quote">"El mejor brownie que he probado. El borde crujiente es adictivo y el centro es puro chocolate fundido."</p>
+        </div>
+        <div class="testimonial-card animate-on-scroll animate-delay-1">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/100?img=59" alt="Avatar Rodrigo" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Rodrigo Méndez</h4>
+              <div class="testimonial-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="quote">"Enviaron mis cajas corporativas con notas personalizadas. Todo puntual y con presentación impecable."</p>
+        </div>
+        <div class="testimonial-card animate-on-scroll animate-delay-2">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/100?img=47" alt="Avatar Paola" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Paola Ramírez</h4>
+              <div class="testimonial-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="quote">"La versión keto es perfecta. Textura real de brownie, sin azúcar, ¡y no extraño nada!"</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-badge">📚 Aprende con nosotros</span>
+            <h2>Blog y Recetas</h2>
+            <p>Tips de horneado, ingredientes de temporada y maridajes para tu mesa dulce.</p>
+          </div>
+          <a class="btn btn-secondary" href="#">Ver todas →</a>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card blog-card-featured animate-on-scroll">
+            <div class="blog-card-image">
+              <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Brownie fudgy">
+              <span class="blog-category">Técnicas</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <span>🕐 5 min de lectura</span>
+                <span>📅 10 Ene 2026</span>
+              </div>
+              <h3>Cómo lograr el corazón fudgy perfecto</h3>
+              <p>Controla temperatura y tiempo para conservar la humedad sin perder estructura. Los secretos del brownie que se derrite en la boca.</p>
+              <a href="#" class="blog-link">Leer artículo →</a>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll animate-delay-1">
+            <div class="blog-card-image">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Café y brownie">
+              <span class="blog-category">Maridajes</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <span>🕐 4 min</span>
+              </div>
+              <h3>Maridajes con café de origen</h3>
+              <p>Qué cafés potencian el chocolate y cuándo elegir filtrado vs espresso.</p>
+              <a href="#" class="blog-link">Leer →</a>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll animate-delay-2">
+            <div class="blog-card-image">
+              <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80" alt="Toppings">
+              <span class="blog-category">Recetas</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <span>🕐 6 min</span>
+              </div>
+              <h3>Guía de toppings caseros</h3>
+              <p>Del crumble de avena al praliné de pistache en 10 minutos.</p>
+              <a href="#" class="blog-link">Leer →</a>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll animate-delay-3">
+            <div class="blog-card-image">
+              <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=800&q=80" alt="Ingredientes">
+              <span class="blog-category">Ingredientes</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <span>🕐 3 min</span>
+              </div>
+              <h3>Chocolate: cómo elegir el mejor</h3>
+              <p>Porcentajes de cacao, origen y cuándo usar cada tipo.</p>
+              <a href="#" class="blog-link">Leer →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFERTAS SECTION -->
+    <section id="ofertas" class="offers-section">
+      <div class="container">
+        <div class="offers-header">
+          <span class="offers-badge">🎁 Ofertas especiales</span>
+          <h2>Promociones <em>irresistibles</em></h2>
+          <p>Descuentos semanales y bundles perfectos para compartir o consentirte.</p>
+        </div>
+        <div class="offers-grid">
+          <div class="offer-card offer-featured animate-on-scroll">
+            <div class="offer-icon">🔥</div>
+            <div class="offer-discount">-15%</div>
+            <h3>Martes de Brownie</h3>
+            <p>En todas las cajas de 6 unidades. Válido solo por WhatsApp.</p>
+            <span class="offer-valid">Válido todos los martes</span>
+            <a href="#pedidos" class="btn btn-gold">Aprovechar →</a>
+          </div>
+          <div class="offer-card animate-on-scroll animate-delay-1">
+            <div class="offer-icon">☕</div>
+            <div class="offer-tag">Popular</div>
+            <h3>2x1 Café + Brownie</h3>
+            <p>Aplica en punto de entrega los sábados de 9:00 a 13:00 hrs.</p>
+            <span class="offer-valid">Solo sábados</span>
+          </div>
+          <div class="offer-card animate-on-scroll animate-delay-2">
+            <div class="offer-icon">🚚</div>
+            <div class="offer-tag">Envío</div>
+            <h3>Envío Gratis</h3>
+            <p>En pedidos mayores a $650 dentro de Colima ciudad.</p>
+            <span class="offer-valid">Sin mínimo de productos</span>
+          </div>
+          <div class="offer-card animate-on-scroll animate-delay-3">
+            <div class="offer-icon">🎂</div>
+            <div class="offer-tag">Nuevo</div>
+            <h3>Pack Cumpleaños</h3>
+            <p>12 brownies + vela + tarjeta personalizada con 20% OFF.</p>
+            <span class="offer-valid">Reserva con 24h de anticipación</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO SECTION -->
+    <section id="contacto" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-badge">📍 Encuéntranos</span>
+            <h2>Visítanos en Colima</h2>
+            <p>Estamos en el centro de Colima. Escríbenos por WhatsApp o agenda una visita a nuestro taller.</p>
+            
+            <div class="contact-cards">
+              <a href="https://wa.me/523123202932" target="_blank" class="contact-card">
+                <div class="contact-card-icon whatsapp">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>+52 312 320 2932</span>
+                </div>
+              </a>
+              <a href="mailto:hola@keks.mx" class="contact-card">
+                <div class="contact-card-icon email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <strong>Correo</strong>
+                  <span>hola@keks.mx</span>
+                </div>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="contact-card">
+                <div class="contact-card-icon instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </div>
+                <div>
+                  <strong>Instagram</strong>
+                  <span>@keks.brownies</span>
+                </div>
+              </a>
+              <div class="contact-card">
+                <div class="contact-card-icon clock">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <strong>Horario</strong>
+                  <span>Lun-Dom 9:00 - 20:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-map">
+            <div class="map-wrapper">
+              <iframe title="Mapa Keks Colima" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.123456789!2d-103.7240!3d19.2433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255ab0f8b3c6d1%3A0x1234567890abcdef!2sColima%20Centro%2C%20Colima!5e0!3m2!1ses!2smx!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map-info">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Centro, Colima, Col. · Visitas solo con cita previa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- INSTAGRAM SECTION -->
+  <section class="instagram-section">
+    <div class="container">
+      <h2>Síguenos en Instagram</h2>
+      <p>Detrás de escena, recetas y brownies que se nos salen del molde 📸</p>
+      <div class="instagram-grid">
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80" alt="Instagram 1">
+          <div class="instagram-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=400&q=80" alt="Instagram 2">
+          <div class="instagram-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=400&q=80" alt="Instagram 3">
+          <div class="instagram-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2c?auto=format&fit=crop&w=400&q=80" alt="Instagram 4">
+          <div class="instagram-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=400&q=80" alt="Instagram 5">
+          <div class="instagram-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <img src="https://images.unsplash.com/photo-1461009209120-103a8f01c9c8?auto=format&fit=crop&w=400&q=80" alt="Instagram 6">
+          <div class="instagram-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+        </div>
+      </div>
+      <a href="https://instagram.com" target="_blank" class="instagram-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @keks.brownies
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Keks © 2026 · Brownies artesanales y postres a tu puerta.</p>
+      <small>SEO ready: metadatos, OpenGraph y contenido relevante.</small>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Anterior">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+    <img src="" alt="Imagen ampliada" id="lightboxImg">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Siguiente">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <!-- CHAT FAB BUTTON -->
+  <div class="chat-fab" id="chatFab" aria-label="Abrir chat">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+  </div>
+
+  <!-- CHAT WIDGET -->
+  <div class="chat" id="chatWidget">
+    <header>
+      <div class="chat-title">🍫 Keks · Chat IA</div>
+      <button class="collapse" id="collapseChat" aria-label="Minimizar chat">✕</button>
+    </header>
+    <div class="chat-body" id="chatBody">
+      <div class="bubble bot">¡Hola! Soy KeksBot 🍫 Puedo ayudarte con menús, entregas y alérgenos. ¿En qué puedo ayudarte?</div>
+    </div>
+    <form id="chatForm">
+      <input id="chatInput" placeholder="Pregunta sobre menús, envíos..." autocomplete="off" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky-cta">
+    <a href="#pedidos">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+      Ordenar ahora
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
